@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="../lib/releases/0.9.2/aframe.min.js"></script>
+    <script src="../lib/AR.js/aframe.min.js"></script>
+    <script src="../lib/AR.js/aframe/build/aframe-ar.js"></script>
+  <script src="../lib/AR.js/aframe/build/aframe-ar.js"></script>
+  <head>
+    <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>AR</title>
+
+  </head>
+  <body>
+    <p>Hello world!</p>
+    <a-scene embedded arjs="patternRatio: 0.9">
+      <a-marker type = "pattern" url = "../src/biscmark.patt">
+        <a-box position="0 0.5 0" material="opacity: 0.5;"></a-box>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
